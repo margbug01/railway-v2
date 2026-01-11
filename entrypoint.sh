@@ -27,8 +27,9 @@ echo "V2RayN配置 (VLESS链接):"
 echo "vless://$UUID@\$RAILWAY_PUBLIC_DOMAIN:443?encryption=none&security=tls&type=ws&path=$WS_PATH#Railway-Xray"
 echo "========================================"
 
-# 启动伪装网站 (后台运行)
-cd /app/www && python3 -m http.server 8080 &
+# 启动伪装网站 (后台运行，使用端口 8080)
+python3 -m http.server 8080 --directory /app/www &
+sleep 1
 echo "伪装网站已启动在端口 8080"
 
 # 启动Xray
