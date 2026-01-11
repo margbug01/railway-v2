@@ -20,12 +20,7 @@
             "level": 0
           }
         ],
-        "decryption": "none",
-        "fallbacks": [
-          {
-            "dest": 8080
-          }
-        ]
+        "decryption": "none"
       },
       "streamSettings": {
         "network": "ws",
