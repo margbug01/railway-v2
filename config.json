@@ -13,37 +13,6 @@
             "level": 0
           }
         ],
-        "decryption": "none",
-        "fallbacks": [
-          {
-            "dest": 8001
-          },
-          {
-            "path": "/PATH_PLACEHOLDER",
-            "dest": 8002
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      }
-    },
-    {
-      "port": 8001,
-      "protocol": "http",
-      "settings": {},
-      "tag": "http-in"
-    },
-    {
-      "port": 8002,
-      "listen": "127.0.0.1",
-      "protocol": "vless",
-      "settings": {
-        "clients": [
-          {
-            "id": "UUID_PLACEHOLDER"
-          }
-        ],
         "decryption": "none"
       },
       "streamSettings": {
